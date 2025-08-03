@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match-3 Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Nunito:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1>Match-3 Game</h1>
+            <div class="score-container">
+                <div class="score-item">
+                    <span class="score-label">Счёт:</span>
+                    <span id="score" class="score-value">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Ходы:</span>
+                    <span id="moves" class="score-value">30</span>
+                </div>
+            </div>
+        </header>
+        
+        <div class="game-board-container">
+            <div id="gameBoard" class="game-board"></div>
+        </div>
+        
+        <div class="game-controls">
+            <button id="newGameBtn" class="btn btn-primary">Новая игра</button>
+            <button id="hintBtn" class="btn btn-secondary">Подсказка</button>
+        </div>
+        
+        <div id="gameOverModal" class="modal hidden">
+            <div class="modal-content">
+                <h2>Игра окончена!</h2>
+                <p>Ваш счёт: <span id="finalScore">0</span></p>
+                <button id="restartBtn" class="btn btn-primary">Играть снова</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
